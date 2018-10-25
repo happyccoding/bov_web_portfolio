@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+    <title>Hyunmi Cho Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar" id="js-header">
+            <span class="navbar__toggle" id="js-navbar-toggle">
+                <i class="fa fa-bars"></i>
+            </span>
+            <a href="#" class="logo">Hyunmi Cho</a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="#about" class="main-nav__link">About</a>
+                </li>
+                <li>
+                    <a href="#projects" class="main-nav__link">Projects</a>
+                </li>
+                <li>
+                    <a href="#skills" class="main-nav__link">Skills</a>
+                </li>
+                <li>
+                    <a href="#contact" class="main-nav__link">Contact</a>
+                </li>
+            </ul>
+
+            <form class="search" id="js-search"><input class="search__input" placeholder="search" /><i class="fa fa-search"></i></form>
+        </nav>
+    </header>
+
+
+
+    <main class="main">
+        <section class="section-about" id="about">
+            <div class="u-center-text u-margin-bottom-medium ">
+                <h2 class="heading-secondary">
+                    Welcome to my profile site
+                </h2>
+            </div>
+
+            <div class="about">
+                <figure class="about__shape">
+                    <img src="img/hmcho.jpg" alt="profile picture" class="about__img">
+                    <figcaption class="about__caption">Lucy Cho</figcaption>
+                </figure>
+                <div class="about__text">
+                    <h3 class="heading-tertiary u-margin-bottom-small">HyunMi Cho<br />
+                        Software Developer<br />
+                        Ashmore, Queensland, Australia</h3>
+                    <p>
+                        Responsible Software Developer with over 10 years experience. Core competencies include
+                        developing server-side programs using C and Java in Windows and Unix environment, backend
+                        development of handling database, and ability to cover both frontend and backend program.
+                        Supportive and accountable team player with dedication and enthusiasm for work. </p>
+                </div>
+            </div>
+
+            <!-- <div class="u-center-text u-margin-top-big">
+                <a href="#" class="btn-text">Go to Projects &rarr;</a>
+            </div> -->
+        </section>
+
+        <section class="section-projects" id="projects">
+            <div class="u-center-text u-margin-bottom-medium ">
+                <h2 class="heading-secondary">
+                    Projects
+                </h2>
+            </div>
+
+            <div class="projects">
+                <div class="tabs">
+                    <div class="tab">
+                        <button class="tab-toggle">Calculator</button>
+                    </div>
+                    <div class="content">
+                        <h3 class="heading">Calculator</h3>
+                        <div id="car1">
+                            <input checked type=radio name="slider" id="slide1" />
+                            <input type=radio name="slider" id="slide2" />
+
+                            <div class="wrapper">
+                                <div class="inner">
+                                    <article>
+                                        <img src="img/calculator_0.jpg"/>
+                                    </article>
+                                    <article>
+                                        <img src="img/calculator_1.jpg"/>
+                                    </article>
+                                </div>
+                                <!-- .inner -->
+                            </div>
+                            <!-- .slider-wrapper -->
+
+                            <div class="slider-prev-next-control">
+                                <label for=slide1></label>
+                                <label for=slide2></label>
+                            </div>
+                            <!-- .slider-prev-next-control -->
+
+                            <div class="slider-dot-control">
+                                <label for=slide1></label>
+                                <label for=slide2></label>
+                            </div>
+                            <!-- .slider-dot-control -->
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <button class="tab-toggle">Web Components</button>
+                    </div>
+                    <div class="content">
+                        <h3 class="heading">Web Components</h3>
+                        <div class="iframe-container">
+                            <iframe src="carousel.html" frameborder="0" scrolling="no"></iframe>
+                          </div>
+                    </div>
+                    <div class="tab">
+                        <button class="tab-toggle">Image Gallery</button>
+                    </div>
+                    <div class="content">
+                        <h3 class="heading">Image Gallery</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis id, eos
+                            quo sed obcaecati itaque porro praesentium tempore, ratione quasi deleniti neque rem,
+                            recusandae. Tenetur mollitia optio possimus fugiat cumque.</p>
+                    </div>
+                    <div class="tab">
+                        <button class="tab-toggle">Forms</button>
+                    </div>
+                    <div class="content">
+                        <h3 class="heading">Forms</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis id, eos
+                            quo sed obcaecati itaque porro praesentium tempore, ratione quasi deleniti neque rem,
+                            recusandae. Tenetur mollitia optio possimus fugiat cumque.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis id, eos quo sed obcaecati
+                            itaque porro praesentium tempore, ratione quasi deleniti neque rem, recusandae. Tenetur
+                            mollitia optio possimus fugiat cumque.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis id, eos quo sed obcaecati
+                            itaque porro praesentium tempore, ratione quasi deleniti neque rem, recusandae. Tenetur
+                            mollitia optio possimus fugiat cumque.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis id, eos quo sed obcaecati
+                            itaque porro praesentium tempore, ratione quasi deleniti neque rem, recusandae. Tenetur
+                            mollitia optio possimus fugiat cumque.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis id, eos quo sed obcaecati
+                            itaque porro praesentium tempore, ratione quasi deleniti neque rem, recusandae. Tenetur
+                            mollitia optio possimus fugiat cumque.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis id, eos quo sed obcaecati
+                            itaque porro praesentium tempore, ratione quasi deleniti neque rem, recusandae. Tenetur
+                            mollitia optio possimus fugiat cumque.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis id, eos quo sed obcaecati
+                            itaque porro praesentium tempore, ratione quasi deleniti neque rem, recusandae. Tenetur
+                            mollitia optio possimus fugiat cumque.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis id, eos quo sed obcaecati
+                            itaque porro praesentium tempore, ratione quasi deleniti neque rem, recusandae. Tenetur
+                            mollitia optio possimus fugiat cumque.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis id, eos quo sed obcaecati
+                            itaque porro praesentium tempore, ratione quasi deleniti neque rem, recusandae. Tenetur
+                            mollitia optio possimus fugiat cumque.
+                        </p>
+                    </div>
+                    <div class="tab">
+                        <button class="tab-toggle">Shopping Cart</button>
+                    </div>
+                    <div class="content">
+                        <h3 class="heading">Shopping Cart</h3>
+                        <div class="iframe-container">
+                            <iframe src="carousel.html" frameborder="0" scrolling="no"></iframe>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="u-center-text u-margin-top-big">
+                <a href="#" class="btn-text">Go to Home &rarr;</a>
+            </div> -->
+        </section>
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="footer__copyright">
+            <p>
+                Built by <a href="#" class="footer__link">Hyunmi Cho</a> for <a href="#" class="footer__link">Bov
+                    Academy</a> frontend developer course</a>.<br>
+                Copyright &copy; by Hyunmi Cho.
+            </p>
+        </div>
+    </footer>
+</body>
+<script src="../js/main.js"></script>
+
+
+</html>
