@@ -1,4 +1,4 @@
-// ---------------------- Variables
+
 $breakpoints: (
   small: 37.5em,
   medium: 56.25em,
@@ -20,7 +20,7 @@ $colors: (
   )
 );
 
-// ---------------------- Mixins
+
 @mixin breakpoint($width) {
   @media screen and (min-width: map-get($breakpoints, $width)) {
     @content;
@@ -61,6 +61,7 @@ $colors: (
       transition: all 0.3s;
     }
   }
+  
   /* ---------------------- Vertical Tabs */
   position: relative;
   min-height: 0;

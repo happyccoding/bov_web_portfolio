@@ -1,0 +1,38 @@
+.description {
+    margin: 1em;
+    font-size: 1.5rem;
+    &__link { 
+        color: $color-primary;
+        font-size: 1.6rem;
+        .fa-github {
+            font-size: 2.2rem;
+        }
+
+        li {
+
+            list-style: none;
+            font-weight: 400;
+            display: inline-block;
+            padding-top: 1rem;
+            padding-right: 1rem;
+            // border-bottom: 1px solid;
+            a {
+                &:link,
+                &:visited {
+                color: inherit;
+                text-decoration: none;
+                // text-transform: uppercase;
+                
+                transition: all 0.2s;
+                }
+
+                &:hover,
+                &:active {
+                // color: $color-primary-dark;
+                box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+                transform: scale(1.1);
+                }
+            }    
+        }
+    }
+}

@@ -7,18 +7,20 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/components";
-@import "components/about";
+@import "components/search";
 @import "components/navigation";
 @import "components/accordion";
 @import "components/carousel";
+@import "components/button";
 
 
+@import "pages/about";
+@import "pages/home";
+@import "pages/projects";
 
 
 
 
 @import "layout/layout";
 
-@import "pages/home";
 
