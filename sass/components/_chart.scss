@@ -1,0 +1,155 @@
+//
+// CHART
+//
+
+$chart-font-size: 1.4rem;
+$chart-background-color: $color-white;
+$color-gray: #adadb7;
+$color-gray-darker: grey;
+$color-quaternary: #ef767a;
+$color-quinary: #4cd2ff;
+$color-gray-darkest: #262637;
+$chart-color: $color-gray-darker;
+$base-vertical-rhythm: 1rem;
+$chart-height: 55rem;
+
+$color-secondary: #fdda16;
+$color-tertiary: #17c5a3;
+$chart-padding: ($base-vertical-rhythm * 6) ($base-vertical-rhythm * 3) ($base-vertical-rhythm * 9);
+$chart-margin: ($base-vertical-rhythm * 3);
+$chart-heading-top: 1rem;
+$chart-heading-font-size: 2rem;
+$chart-canvas-yaxis-height: 25%;
+$chart-plot-width: 20%;
+$chart-plot-label-width: 10rem;
+$chart-plot-label-rotate: rotate(-60deg);
+
+.chart {
+  background-color: $chart-background-color;
+  color: $chart-color;
+  display: flex;
+  height: $chart-height;
+  margin-bottom: $chart-margin;
+  overflow: hidden;
+  padding: $chart-padding;
+  position: relative;
+  width: 100%;
+}
+
+.chart__heading {
+  font-size: $chart-heading-font-size;
+  font-weight: 600;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  text-align: center;
+  top: $chart-heading-top;
+  width: 100%;
+}
+
+.chart--frontend .chart__heading {
+  color: $color-quaternary;
+}
+.chart--backend .chart__heading {
+  color: $color-quinary;
+}
+.chart--other .chart__heading {
+  color: $color-gray-darkest;
+}
+
+.chart__yaxis {
+  height: 100%;
+}
+
+.chart__yaxis__label {
+  color: $color-gray;
+  font-size: $chart-font-size;
+  height: $chart-canvas-yaxis-height;
+  left: -$base-vertical-rhythm;
+  position: relative;
+  text-align: right;
+  top: -($base-vertical-rhythm * 0.75);
+}
+
+.chart__canvas {
+  border-bottom: 1px solid $color-gray;
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  position: relative;
+}
+
+.chart__canvas__lines {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.chart__canvas__line {
+  border-top: 1px dashed $color-gray;
+  height: $chart-canvas-yaxis-height;
+  position: relative;
+}
+
+.chart__plot {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  margin-right: ($base-vertical-rhythm * 0.5);
+  position: relative;
+  width: $chart-plot-width;
+  z-index: 2;
+}
+
+.chart__canvas-lines + .chart__plot {
+  margin-left: ($base-vertical-rhythm * 0.5);
+}
+
+.chart__plot__inner {
+  background-color: $color-gray-darker;
+  height: 100%;
+  margin: 0 auto;
+  max-width: ($base-vertical-rhythm * 5);
+  position: relative;
+  width: 100%;
+}
+
+.chart__plot:nth-child(1) .chart__plot__inner {
+  background-color: $color-primary;
+  color: $color-primary;
+}
+
+.chart__plot:nth-child(2) .chart__plot__inner {
+  background-color: $color-secondary;
+  color: $color-secondary;
+}
+
+.chart__plot:nth-child(3) .chart__plot__inner {
+  background-color: $color-tertiary;
+  color: $color-tertiary;
+}
+
+.chart__plot:nth-child(4) .chart__plot__inner {
+  background-color: $color-quaternary;
+  color: $color-quaternary;
+}
+
+.chart__plot:nth-child(5) .chart__plot__inner {
+  background-color: $color-quinary;
+  color: $color-quinary;
+}
+
+.chart__plot__label {
+  bottom: -7rem;
+  font-size: $chart-font-size;
+  left: -4rem;
+  position: absolute;
+  text-align: right;
+  transform: $chart-plot-label-rotate;
+  white-space: nowrap;
+  width: $chart-plot-label-width;
+}

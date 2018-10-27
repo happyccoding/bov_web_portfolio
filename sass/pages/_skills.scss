@@ -1,0 +1,31 @@
+.section-skills {
+  &__progress {
+    $graph-item-width-1: 60%;
+    $graph-item-width-2: 40%;
+
+    display: table;
+    margin-bottom: 3rem;
+    width: 100%;
+
+    &--item {
+      display: table-cell;
+      padding: 1rem;
+      text-align: center;
+      font-weight: 500;
+      font-size: 1.8rem;
+      color: $color-white;
+
+      &:nth-child(1) {
+        background-color: $color-secondary-light;
+        width: $graph-item-width-1;
+        border-radius: .5rem 0 0 .5rem;
+      }
+
+      &:nth-child(2) {
+        background-color: $color-tertiary-light;
+        width: $graph-item-width-2;
+        border-radius: 0 .5rem .5rem 0;
+      }
+    }
+  }
+}
