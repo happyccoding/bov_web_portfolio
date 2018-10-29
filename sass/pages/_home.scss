@@ -56,3 +56,28 @@
 
 }
 
+.section-contact {
+    padding: 3rem;
+    padding-top: 10rem;
+
+
+    @media screen and (min-width: 768px) {
+        padding: 10rem 20rem;
+    }    
+
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    // background-image: linear-gradient(to right bottom, $color-grey-light-1, $color-grey-light-2);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+
+
+}
+

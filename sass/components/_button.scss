@@ -20,10 +20,10 @@
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba($color-black,.2);
 
-        &::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
-        }
+        // &::after {
+        //     transform: scaleX(1.4) scaleY(1.6);
+        //     opacity: 0;
+        // }
     }
     
     &:active,
@@ -42,7 +42,7 @@
         }
     }
 
-    &--green {
+    &--primary {
         background-color: $color-primary;
         color: $color-white;
 
@@ -93,4 +93,40 @@
         box-shadow: 0 .5rem 1rem rgba($color-black, .15);
         transform: translateY(0);
     }
+}
+
+.icon__group {
+    display: inline-block;
+    position: relative;
+    color: $color-primary;
+    font-size: 3rem!important;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .icon {
+        margin-left: 2rem;
+        top: 7px;
+        position: relative;        
+    
+        &:hover {
+            cursor: pointer;
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba($color-black,.2);
+        }
+        
+        &:active,
+        &:focus {
+            outline: none;
+            transform: translateY(-1px);
+            box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+        } 
+        
+        @include respond(phone) {
+            margin-top: 4rem;
+        }
+    } 
+    
+
 }

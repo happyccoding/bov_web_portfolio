@@ -1,0 +1,42 @@
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    padding-top: 10rem; 
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba($color-black,0.4); /* Black w/ opacity */
+
+    /* Modal Content */
+    &__content {
+        background-color: $color-grey-light-1;
+        margin: auto;
+        padding: 2rem;
+        border: 1rem solid #888;
+        width: 80%;
+        height: 50%;
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    /* The Close Button */
+    &__close {
+        color: $color-black;
+        float: right;
+        font-size: 4rem;
+        font-weight: bold;
+        
+    }
+}
+
+
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
